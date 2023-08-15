@@ -59,8 +59,8 @@ importers:
         specifier: 29.5.0
         version: 29.5.0(@types/node@14.18.33)
       json5:
-        specifier: 2.1.1
-        version: 2.1.1
+        specifier: 2.2.2
+        version: 2.2.2
       lint-staged:
         specifier: 9.2.5
         version: 9.2.5
@@ -1618,7 +1618,7 @@ packages:
       '@babel/types': 7.20.7
       convert-source-map: 1.9.0
       debug: 4.3.4
-      json5: 2.2.3
+      json5: 2.2.2
       lodash: 4.17.21
       resolve: 1.22.1
       semver: 5.7.1
@@ -3692,7 +3692,7 @@ packages:
     dependencies:
       '@jest/fake-timers': 28.1.3
       '@jest/types': 28.1.3
-      '@types/node': 18.14.6
+      '@types/node': 16.18.11
       jest-mock: 28.1.3
     dev: true
 
@@ -3883,7 +3883,7 @@ packages:
       '@jest/schemas': 28.1.3
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.14.6
+      '@types/node': 16.18.11
       '@types/yargs': 17.0.19
       chalk: 4.1.0
     dev: true
@@ -11845,7 +11845,7 @@ packages:
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 18.14.6
+      '@types/node': 16.18.11
       chalk: 4.1.0
       ci-info: 3.7.1
       graceful-fs: 4.2.11
@@ -12050,16 +12050,10 @@ packages:
       minimist: 1.2.7
     dev: true
 
-  /json5@2.1.1:
-    resolution: {integrity: sha512-l+3HXD0GEI3huGq1njuqtzYK8OYJyXMkOLtQ53pjWh89tvWS2h6l+1zMkYWqlb57+SiQodKZyvMEFb2X+KrFhQ==}
-    engines: {node: '>=6'}
-    dependencies:
-      minimist: 1.2.7
-    dev: true
-
   /json5@2.2.2:
     resolution: {integrity: sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==}
     engines: {node: '>=6'}
+    hasBin: true
 
   /json5@2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
@@ -16640,6 +16634,7 @@ packages:
   /vm2@3.9.17:
     resolution: {integrity: sha512-AqwtCnZ/ERcX+AVj9vUsphY56YANXxRuqMb7GsDtAr0m0PcQX3u0Aj3KWiXM0YAHy7i6JEeHrwOnwXbGYgRpAw==}
     engines: {node: '>=6.0'}
+    deprecated: The library contains critical security issues and should not be used for production! The maintenance of the project has been discontinued. Consider migrating your code to isolated-vm.
     hasBin: true
     dependencies:
       acorn: 8.8.2
